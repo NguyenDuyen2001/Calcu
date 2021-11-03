@@ -36,6 +36,7 @@ namespace Calcu
             this.txtSoB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtKetQua = new System.Windows.Forms.TextBox();
+            this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -56,7 +57,7 @@ namespace Calcu
             // 
             // btCong
             // 
-            this.btCong.Location = new System.Drawing.Point(578, 254);
+            this.btCong.Location = new System.Drawing.Point(605, 345);
             this.btCong.Name = "btCong";
             this.btCong.Size = new System.Drawing.Size(103, 46);
             this.btCong.TabIndex = 2;
@@ -96,11 +97,22 @@ namespace Calcu
             this.txtKetQua.Size = new System.Drawing.Size(293, 32);
             this.txtKetQua.TabIndex = 1;
             // 
+            // btTru
+            // 
+            this.btTru.Location = new System.Drawing.Point(484, 345);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(103, 46);
+            this.btTru.TabIndex = 2;
+            this.btTru.Text = "-";
+            this.btTru.UseVisualStyleBackColor = true;
+            this.btTru.Click += new System.EventHandler(this.btTru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 342);
+            this.ClientSize = new System.Drawing.Size(743, 413);
+            this.Controls.Add(this.btTru);
             this.Controls.Add(this.btCong);
             this.Controls.Add(this.txtKetQua);
             this.Controls.Add(this.label3);
@@ -127,6 +139,7 @@ namespace Calcu
         private System.Windows.Forms.TextBox txtSoB;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtKetQua;
+        private System.Windows.Forms.Button btTru;
     }
 }
 
