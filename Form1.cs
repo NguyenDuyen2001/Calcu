@@ -21,5 +21,14 @@ namespace Calcu
         {
 
         }
+
+        private void btCong_Click(object sender, EventArgs e)
+        {
+            int a, b, ketQua;
+            a = int.Parse(txtSoA.Text);
+            b = int.Parse(txtSoB.Text);
+            ketQua = a + b;
+            txtKetQua.Text = ketQua.ToString();
+        }
     }
 }
